@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="shortcut icon" href="resourses/VectorAlura.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <main  class="main">
+    <div class="logo" id="logo">
+      <img src="/resourses/Vectoralura.png" id="logo" width="100%" height="auto">
+      <p>Encriptador</p>
+    </div>
+
+    <textarea class="mensaje" name="mensaje" id="mensaje" width="100%" height="auto"
+      placeholder="Ingrese el texto aquí"></textarea>
+
+    <div class="advertencia">
+      <img class="logo-advertencia" src="resourses/VectorExclamacion.png" alt="exclamacion">
+      <p class="texto-advertencia">Solo letras minúsculas y sin acentos</p>
+    </div>
+
+
+    <div class="botones-funcion">
+      <button class="encriptar" id="encriptar">Encriptar</button>
+      <button class="desencriptar" id="desencriptar">Desencriptar</button>
+    </div>
+
+
+
+    <div>
+      <textarea class="resultado" name="resultado" id="resultado" cols="100%" rows="100%">
+    </textarea>
+      <div>
+        <button class="copiar-texto" id="copiar" onclick="procesarCopiar()">Copiar</button>
+      </div>
+    </div>
+    <div class="muneco">
+      <img id="muneco" src="resourses/Muñeco.png" alt="muneco">
+    </div>
+    <div class="texto-resultado" id="texto-advertencia">
+      <p1>
+        Ningún mensaje fue encontrado
+      </p1>
+      <p2>
+        Ingresa el texto que desees encriptar o desencriptar.
+      </p2>
+    </div>
+
+
+    <script src="encrypt.js"></script>
+
+  </main>
+
+
+  <footer>
+    <p>Jean Carlos Muñoz Reyes &copy 2023</p>
+    <p>Contacto: jean.munoz2134@gmail.com</p>
+  </footer>
+</body>
+
+</html>
