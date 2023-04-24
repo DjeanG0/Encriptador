@@ -13,14 +13,18 @@
 
 <body>
 
-  <main  class="main">
+  <header>
     <div class="logo" id="logo">
       <img src="/resourses/VectorAlura.png" id="logo" width="100%" height="auto">
       <p>Encriptador</p>
     </div>
+  </header>
 
-    <textarea class="mensaje" name="mensaje" id="mensaje" width="100%" height="auto"
-      placeholder="Ingrese el texto aquí"></textarea>
+  <main class="main">
+
+
+    <textarea class="mensaje" name="mensaje" id="mensaje" width="100%" height="auto" placeholder="Ingrese el texto aquí"
+      autofocus></textarea>
 
     <div class="advertencia">
       <img class="logo-advertencia" src="resourses/VectorExclamacion.png" alt="exclamacion">
@@ -36,10 +40,10 @@
 
 
     <div>
-      <textarea class="resultado" name="resultado" id="resultado" cols="100%" rows="100%">
-    </textarea>
+      <textarea class="resultado" name="resultado" id="resultado" cols="100%" rows="100%" disabled>
+      </textarea>
       <div>
-        <button class="copiar-texto" id="copiar" onclick="procesarCopiar()">Copiar</button>
+        <button class="copiar-texto" id="copiar" onclick="procesarCopiar()" style="display:none">Copiar</button>
       </div>
     </div>
     <div class="muneco">

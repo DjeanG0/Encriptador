@@ -44,19 +44,44 @@ function desencriptar() {
   return resultado;
 }
 
+
 let botonEncriptar = document.getElementById('encriptar');
 botonEncriptar.addEventListener("click", function () {
+
   let mensaje = document.getElementById("mensaje").value;
-  let resultado = encriptar(mensaje);
-  document.getElementById("resultado").value = resultado;
+
+  if (mensaje == "") {
+    mostrarImagen();
+
+  }
+  else {
+    let resultado = encriptar(mensaje);
+    document.getElementById("resultado").value = resultado;
+    ocultarImagen();
+    mostrarBotonCopiar();
+  }
 });
 
 let botonDesencriptar = document.getElementById('desencriptar');
 botonDesencriptar.addEventListener("click", function () {
   let mensaje = document.getElementById("mensaje").value;
-  let resultado = desencriptar(mensaje);
-  document.getElementById("resultado").value = resultado;
+
+  if (mensaje == "") {
+    mostrarImagen();
+  }
+
+  else {
+    let resultado = desencriptar(mensaje);
+    document.getElementById("resultado").value = resultado;
+    ocultarImagen();
+    mostrarBotonCopiar();
+  }
 });
+
+
+/*
+funcion para el boton de copiar el texto encriptado
+*/
 
 function procesarCopiar() {
   let texto = document.getElementById("resultado").value.trim();
@@ -66,6 +91,7 @@ function procesarCopiar() {
   copiar();
 }
 
+
 function copiar() {
   let texto = document.getElementById("resultado").value;
 
@@ -74,29 +100,79 @@ function copiar() {
   }
 
   navigator.clipboard.writeText(texto)
-  alert("Texto copiado")
-  borrar();
+  cambiarTextoBtnCopiar();
+  borrarResultado();
+  borrarMensaje();
+  setTimeout(ocultarBotonCopiar, 2500);
 }
 
-function borrar() {
+
+/*
+  funcion para borrar el textarea resultado
+*/
+function borrarResultado() {
   let texto_vacio = document.getElementById("resultado");
   texto = texto_vacio.value.trim();
-  if (texto === "") {
+  if (texto == "") {
     return;
   }
   texto_vacio.value = "";
 }
+
 /*
-function ocultarObjetos() {
-  setTimeout(() => {
-    let texto = document.getElementById("mensaje").value;
-    let imagenVacio = document.getElementById("muneco");
-    let mensajeAdvertencia = document.getElementElement("texto-advertencia");
-    let textoEncriptado = document.getElementById("resultado");
-    if (texto == ""){
-      textoEncriptado.style.display = "none";
-      imagenVacio.style.display = "none";
-      mensajeAdvertencia.style.display = "none";
-    }
-  }, 0);
-}*/
+  funcion para borrar el texto del textarea mensaje
+*/
+function borrarMensaje() {
+  let mensaje = document.getElementById("mensaje");
+  texto = mensaje.value.trim();
+  if (texto == "") {
+    return;
+  }
+  mensaje.value = "";
+}
+
+
+/*
+  Funciones para mostrar la imagen y el texto de advertencia en el cuadro de resultado
+*/
+function ocultarImagen() {
+  document.getElementById("muneco").style.display = 'none';
+  document.getElementById("texto-advertencia").style.display = 'none';
+}
+
+function mostrarImagen() {
+  document.getElementById("muneco").style.display = 'block';
+  document.getElementById("texto-advertencia").style.display = 'flex';
+}
+
+
+/*
+  Funcion para mostrar el boton de copiar
+*/
+function mostrarBotonCopiar() {
+  document.getElementById("copiar").style.display = 'block';
+}
+
+function ocultarBotonCopiar() {
+  document.getElementById("copiar").style.display = 'none';
+}
+
+
+/*
+  Funcion para cambiar el texto del boton de copiar
+*/
+function cambiarTextoBtnCopiar() {
+  let btnCopiar = document.getElementById("copiar");
+  setTimeout(function () {
+    btnCopiar.textContent = "Texto Copiado";
+    btnCopiar.style.opacity = 0.5;
+  }, 500);
+  setTimeout(function () {
+    btnCopiar.textContent = 'Copiar';
+    btnCopiar.style.opacity = 1;
+  }, 2500);
+}
+
+
+
+

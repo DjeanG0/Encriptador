@@ -1,6 +1,12 @@
+header {
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
 .main {
-    width: 1440px;
-    height: 1024px;
+    width: auto;
+    height: 600px;
     background: #F3F5FC;
 }
 
@@ -32,10 +38,10 @@
 
 .mensaje {
     position: absolute;
-    width: 400px;
-    height: 400px;
-    left: 240px;
-    top: 168px;
+    width: 600px;
+    height: 280px;
+    left: 100px;
+    top: 100px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -44,7 +50,8 @@
     color: #0A3871;
     border-radius: 24px;
     padding: 32px 32px;
-    border-color: white;
+    border-color: #F3F5FC;
+    background: #F3F5FC; 
 }
 
 .advertencia {
@@ -56,8 +63,8 @@
     position: absolute;
     width: 229px;
     height: 18px;
-    left: 240px;
-    top: 851px;
+    left: 100px;
+    top: 450px;
 }
 
 .logo-advertencia {
@@ -93,8 +100,8 @@
     position: absolute;
     width: 680px;
     height: 67px;
-    left: 240px;
-    top: 885px;
+    left: 100px;
+    top: 500px;
 }
 
 .encriptar {
@@ -112,6 +119,14 @@
     color: white;
     border: none;
     font-size: 18px;
+}
+
+.encriptar:hover {
+    background: #0a715b;
+    border: 1px solid #0A3871;
+    color: black;
+    transform: scale(1.1);
+    transition: 1s all;
 }
 
 .desencriptar {
@@ -132,11 +147,19 @@
     font-size: 18px;
 }
 
+.desencriptar:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    transform: scale(1.1);
+    transition: 1s all;
+}
+
 .resultado {
     position: absolute;
     width: 340px;
-    height: 912px;
-    left: 1000px;
+    height: 490px;
+    left: 870px;
     top: 40px;
     right: 40px;
     padding: 32px 32px;
@@ -151,8 +174,8 @@
     position: absolute;
     width: 336px;
     height: 67px;
-    left: 1032px;
-    top: 885px;
+    left: 902px;
+    top: 500px;
     box-sizing: border-box;
     flex-direction: row;
     align-items: flex-start;
@@ -166,12 +189,20 @@
     font-size: 18px;
 }
 
+.copiar-texto:hover {
+    background: rgb(47, 136, 36);
+    transform: scale(1.1);
+    transition: 1s all;
+    color: white;
+
+}
+
 .muneco {
     position: absolute;
     width: 336px;
     height: 304px;
-    left: 1032px;
-    top: 283px;
+    left: 902px;
+    top: 50px;
 }
 
 .texto-resultado {
@@ -183,8 +214,8 @@
     position: absolute;
     width: 336px;
     height: 122px;
-    left: 1032px;
-    top: 619px;
+    left: 902px;
+    top: 350px;
 }
 
 .texto-resultado p1 {
@@ -219,8 +250,10 @@
 
 
 footer {
+    position: relative;
+    top:0px;
     width: auto;
-    height: 75px;
+    height: auto;
     text-align: center;
     background-image: url(resourses/footer.png);
     font-size: 18px;
@@ -228,7 +261,7 @@ footer {
 
 footer p {
     color: white;
-    padding: 10px;
+    padding: 3px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
 }
