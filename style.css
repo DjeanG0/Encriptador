@@ -270,11 +270,11 @@ footer p {
 /*
     Adaptacion para dispositivos moviles 
 */
-@media screen and (max-width:390px) {
+@media screen and (max-width:480px) {
 
     .main {
         width: auto;
-        height: 1390px;
+        height: 980px;
     }
 
     .logo {
@@ -290,15 +290,15 @@ footer p {
     .mensaje {
         display: flex;
         align-items: center;
-        width: auto;
-        height: 30%;
+        width: 90%;
+        height: 50%;
         left: 5%;
         right: 5%;
-        top: 152px;
+        top: 100px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 32px;
+        font-size: 25px;
         line-height: 150%;
         color: #0A3871;
         padding: 5px;
@@ -316,7 +316,7 @@ footer p {
         height: 18px;
         left: 5%;
         right: 5%;
-        top: 451px;
+        top: 370px;
     }
 
     .botones-funcion {
@@ -324,6 +324,7 @@ footer p {
         align-items: center;
         padding: 5px;
         width: auto;
+        top: 410px;
         left: 2%;
         right: 2%;
     }
@@ -340,19 +341,20 @@ footer p {
         align-items: flex-start;
         padding: 10px;
         width: auto;
-        height: 30%;
+        height: 50%;
         left: 5%;
         right: 5%;
-        top: 707px;
+        top: 610px;
     }
 
     .muneco {
         display: flex;
         flex-direction: column;
         align-items: center;
-        left: 5%;
-        right: 5%;
-        top: 707px;
+        left: 25%;
+        right: 25%;
+        top: 615px;
+        width: 50%;
     }
 
     #muneco {
@@ -365,30 +367,30 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        left: 5%;
+        left: 15%;
         right: 5%;
-        top: 850px;
+        top: 740px;
     }
 
     .copiar-texto {
         width: auto;
-        top : 890px;
+        top: 800px;
         left: 10%;
         right: 10%;
         display: none;
     }
 
-
     footer {
         position: absolute;
-        top: 1000px;
-        width: auto;
+        top: 900px;
+        width: 100%;
         height: 80px;
         text-align: center;
     }
 
     footer p {
         padding: 10px;
+        width: auto;
     }
 
 }
