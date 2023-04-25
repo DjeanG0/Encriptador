@@ -274,7 +274,7 @@ footer p {
 
     .main {
         width: auto;
-        height: auto;
+        height: 1390px;
     }
 
     .logo {
@@ -371,14 +371,11 @@ footer p {
     }
 
     .copiar-texto {
-        position: absolute;
-        box-sizing: border-box;
-        flex-direction: row;
-        align-items: flex-start;
-        
-        left: 5%;
-        right: 5%;
-        top: 1000px;
+        width: auto;
+        top : 890px;
+        left: 10%;
+        right: 10%;
+        display: none;
     }
 
 
