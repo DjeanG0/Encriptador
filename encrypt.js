@@ -94,17 +94,24 @@ function procesarCopiar() {
 
 function copiar() {
   let texto = document.getElementById("resultado").value;
-
+  let btnCopiar = document.getElementById("copiar");
   if (texto.trim() === "") {
     return;
   }
 
+  //funcion del boton copiar para dispositivos moviles
+  btnCopiar.addEventListener("touchstart", function() {
+    navigator.clipboard.writeText(texto);
+  });
   navigator.clipboard.writeText(texto)
+
   cambiarTextoBtnCopiar();
   borrarResultado();
   borrarMensaje();
   setTimeout(ocultarBotonCopiar, 2500);
 }
+
+
 
 
 /*
