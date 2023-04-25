@@ -51,7 +51,7 @@ header {
     border-radius: 24px;
     padding: 32px 32px;
     border-color: #F3F5FC;
-    background: #F3F5FC; 
+    background: #F3F5FC;
 }
 
 .advertencia {
@@ -251,7 +251,7 @@ header {
 
 footer {
     position: relative;
-    top:0px;
+    top: 0px;
     width: auto;
     height: auto;
     text-align: center;
@@ -267,31 +267,70 @@ footer p {
 }
 
 
-/*Adaptacion para dispositivos moviles
+/*
+    Adaptacion para dispositivos moviles 
+*/
+@media screen and (max-width:390px) {
 
-@media screen and (max-width:480px) {
-
-    main {
-        width: 100%;
+    .main {
+        width: auto;
         height: auto;
     }
 
-    .logo {}
+    .logo {
+        width: auto;
+        position: absolute;
+        align-items: center;
+        left: 4.27%;
+        right: 87.2%;
+        top: 2%;
+        bottom: 25%;
+    }
 
     .mensaje {
-        width: 95%;
-        height: 70%;
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 30%;
+        left: 5%;
+        right: 5%;
+        top: 152px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+        padding: 5px;
+    }
+
+
+    .advertencia {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: auto;
+        height: 18px;
+        left: 5%;
+        right: 5%;
+        top: 451px;
     }
 
     .botones-funcion {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 24px;
+        align-items: center;
+        padding: 5px;
+        width: auto;
+        left: 2%;
+        right: 2%;
     }
 
     .encriptar,
     .desencriptar {
-        width: 343px;
+        width: 90%;
         height: 67px;
     }
 
@@ -299,15 +338,60 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 32px;
-        gap: 32px;
-
-        position: absolute;
-        width: 327px;
-        height: 186px;
-        left: 24px;
+        padding: 10px;
+        width: auto;
+        height: 30%;
+        left: 5%;
+        right: 5%;
         top: 707px;
     }
 
+    .muneco {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 5%;
+        right: 5%;
+        top: 707px;
+    }
 
-}*/
+    #muneco {
+        padding: 1px;
+        width: 50%;
+        height: auto;
+    }
+
+    .texto-resultado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 5%;
+        right: 5%;
+        top: 850px;
+    }
+
+    .copiar-texto {
+        position: absolute;
+        box-sizing: border-box;
+        flex-direction: row;
+        align-items: flex-start;
+        
+        left: 5%;
+        right: 5%;
+        top: 1000px;
+    }
+
+
+    footer {
+        position: absolute;
+        top: 1000px;
+        width: auto;
+        height: 80px;
+        text-align: center;
+    }
+
+    footer p {
+        padding: 10px;
+    }
+
+}
