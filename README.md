@@ -3,6 +3,7 @@ Encriptador y desencriptador. Visita el siguiente link:
 https://djeang0.github.io/Encriptador/
 
 ¡Bienvenidas y bienvenidos mi primer desafío!
+![Encriptador](https://user-images.githubusercontent.com/111096142/234614698-4194afa7-bedb-4ce8-bc5f-90049bac68ee.jpg)
 
 Durante estas cuatro semanas, trabaje en una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
