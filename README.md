@@ -2,7 +2,9 @@
 
 ![Encriptador#2](https://user-images.githubusercontent.com/111096142/234617222-ffbdb78f-6387-4bc4-b294-4e90aa049cd3.jpg)
 
-![VideoEncriptador.mp4](https://github.com/DjeanG0/Encriptador/blob/main/VideoEncriptador.mp4)
+<video width="320" height="240" controls">
+        <source src="VideoEncriptador.mp4" type="video/mp4">
+</video>
 
 # Encriptador y desencriptador. Visita el siguiente link:  
 https://djeang0.github.io/Encriptador/
