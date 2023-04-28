@@ -33,7 +33,7 @@ El resultado debe ser mostrado en la pantalla.
 <h3>Extras:</h3><br>
 
 Boton para copiar el texto encriptado/desencriptado para la sección de transferencia funcional tanto para computador como para celulares, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
-Trabaje con el sistema ágil de desarrollo Trello.
+Trabaje con el sistema ágil de desarrollo <strong>Trello</strong>.
 
 
 
